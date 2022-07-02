@@ -3,6 +3,7 @@
   margin: 0 ;
   font-family: sans-serif;
 }
+
 canvas {
   position: absolute;
   top: 0;
@@ -21,6 +22,10 @@ canvas {
 
 .design_minimalism:hover {
   color: white;
+  white-space: nowrap; /* блок может содержать не более одной строки */
+  text-align: center;
+  height: 10em;  /* не в % */
+  line-height: 20em; /* не поддерживается Opera Mini [opera.com] */
 }
 
 .design_minimalism { 
