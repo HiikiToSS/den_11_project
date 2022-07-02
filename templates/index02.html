@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Языки Программирования</title>
+<link rel="stylesheet" href="/static/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div id = body>
+<!--  ты пытался скрыть инфу о питоне и кнопку ссылка href чтобы при этом появлялась другая кнопка но снизу текста и дальше хотел сделать типо галочку/стрелочки по которой моно было бы переходить на страницу с полным описанием (60, 64 и 72 строки)  -->
+
+<!-- Панель навигации -->   
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Языки програмирования</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">На главную</a>
+        </li>
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Разделы</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Языки 1го типа</a></li>
+      <li><a class="dropdown-item" href="#">Языки 1го типа</a></li>
+      <li><a class="dropdown-item" href="#">Языки 1го типа </a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="dev.html">В общем о ЯПах</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Карточки с описанием языков  --> 
+<div class='container'>
+<div class='row'>
+  
+<div class ='col'>
+  <div class="card mb-3" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">JavaScript</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
+    <p class="card-text">JavaScript ("JS" для краткости) — это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах. ||Сделай краткое описание а при нажатии выводи расширенное с кнопкой для перехода на страницу полностью о языке (https://bootstrap-4.ru/docs/5.0/components/collapse/)</p>
+    </div>
+  </div> 
+</div>
+      
+<div class ='col'>
+  <div class="card mb-3" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">Python</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
+    <p class="card-text hide_small_info">Python — это высокоуровневый язык  ориентированный на повышение производительности разработчика и читаемости кода.</p>
+
+      
+<p>
+  <a class="btn btn-primary show_more_info_button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Ссылка с href
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    тут будет более полная инфа но не полностью полная инфа о языке (столько тафтологий, русичка бы прибила, хехе)
+
+<a class="btn btn-primary after_hide_small_info_button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Ссылка с href
+  </a>
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+</div>
+    
+<div class ='col'>
+  <div class="card mb-3" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">С++</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
+    <p class="card-text">C++ — компилируемый, статически типизированный язык программирования общего назначения. Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование.</p>
+    </div>
+  </div>
+</div>
+  
+<div class ='col'>
+  <div class="card mb-3" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title">PHP (В простонародии пыха)</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
+    <p class="card-text">PHP – это широко используемый язык сценариев общего назначения с открытым исходным кодом. Говоря проще, PHP это язык программирования, специально разработанный для написания web-приложений (сценариев), исполняющихся на Web-сервере. Аббревиатура PHP означает “Hypertext Preprocessor (Препроцессор Гипертекста)".</p>
+    </div>
+  </div> 
+</div>
+  
+  </div>
+</div> 
+
+<div class="footer">
+  <div class="copyright">Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
