@@ -3,16 +3,12 @@
   margin: 0 ;
   font-family: "Montserrat";
 }
-html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии */
-    overflow-x: hidden;
-}
 
 canvas {
   position: absolute; 
   top: 0;
   left: 0;
-  z-index: -1000;
+  z-index: -1;
 }
 
 .design_minimalism:hover{
@@ -33,7 +29,7 @@ canvas {
   width: 1em;
   border: blue;
   background: 0; 
-  transition: all 2s ease 0s; 
+  transition: all 0.8s ease 0s; 
   transform: translate(0px,400%);
   opacity: 0;
 } 
@@ -41,4 +37,10 @@ canvas {
 .design_minimalism._active {
   transform:translate(0px,0px);
   opacity: 1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
 }
