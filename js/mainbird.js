@@ -188,7 +188,7 @@ function init() {
     scene = new THREE.Scene();
     birds = [];
     boids = [];
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < 30; i++) {
         boid = boids[i] = new Boid();
         boid.position.x = Math.random() * 400 - 200;
         boid.position.y = Math.random() * 400 - 200;

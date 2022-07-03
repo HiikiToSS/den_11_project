@@ -1,110 +1,44 @@
- * {
+ *{
   padding: 0 ;
   margin: 0 ;
-  font-family: sans-serif;
+  font-family: "Montserrat";
+}
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
 }
 
 canvas {
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   z-index: -1000;
 }
 
-.footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  display: flex;
-  margin: 4px;
-  justify-content: center;
-}
-
-.design_minimalism:hover {
+.design_minimalism:hover{
   color: white;
-  white-space: nowrap; /* блок может содержать не более одной строки */
-  text-align: center;
-  height: 10em;  /* не в % */
-  line-height: 20em; /* не поддерживается Opera Mini [opera.com] */
+  transition: 1s color;
 }
 
-.design_minimalism { 
-  border: 3px solid red;
+.design_minimalism {
+  color: black;
+  font-size: 3em;
   font-family: "Montserrat";
-  white-space: nowrap; /* блок может содержать не более одной строки */
-  display: flex;  
-  top: 50%;
-  left: 50%;
-}
-
-.copyright{
-  color: white;
-}
-
-body{
-  background: url("img/img08.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#sidebar {
-  font-family: 'Montserrat', sans-serif;
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  background: transparent;
-  left: -254px;
-  -moz-transition: all 600ms;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
-}
-#sidebar ul li:first-child {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  color:#162635;
-  font-size: 1.95em;
-  list-style: none;
-  padding: 25px 10px 10px 10px;
-}
-#sidebar ul li:not(:first-child) {
-  width: 90%;
-  margin-left: 10%;
-  font-size: 1.1em;
-  list-style: none;
-  padding: 15px 10px
-}
-#sidebar ul li a {
-  font-family: 'Montserrat', sans-serif;
-  color: #666;
-  text-decoration: none;
-}
-#sidebar ul li a:hover {
-  color: white;
-}
-#sidebar .toggle-btn {
+  white-space: nowrap;
+  display: flex;
   position: absolute;
-  left: 270px;
-  top: 20px;
-  background: #a6d5df;
-  padding: 10px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-#sidebar .toggle-btn:hover {
-  background: #000000;
-}
-#sidebar .toggle-btn:hover span{
-  background: #fafafa;
-}
-#sidebar .toggle-btn span {
-  display: block;
-  width: 25px;
-  height: 4px;
-  background-color: #666;
-  margin: 4px 0;
-  
-}
-#sidebar.active {
-  left: 0px;
+  left: 40%;
+  top:40%;
+  min-height: 1em;
+  width: 1em;
+  border: blue;
+  background: 0; 
+  transition: all 0.8s ease 0s; 
+  transform: translate(0px,400%);
+  opacity: 0;
+} 
+
+.design_minimalism._active {
+  transform:translate(0px,0px);
+  opacity: 1;
 }

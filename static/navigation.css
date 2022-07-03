@@ -1,0 +1,83 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  background: url("img/img08.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#sidebar {
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: transparent;
+  left: -254px;
+  -moz-transition: all 600ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+#sidebar ul li:first-child {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color:#162635;
+  font-size: 1.95em;
+  list-style: none;
+  padding: 25px 10px 10px 10px;
+}
+#sidebar ul li:not(:first-child) {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px 10px
+}
+#sidebar ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  text-decoration: none;
+  transition: 500ms color;
+}
+#sidebar ul li a:hover {
+  color: white;
+  transition: 500ms color;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  background: #a6d5df;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+#sidebar .toggle-btn:hover {
+  background: ;
+}
+#sidebar .toggle-btn:hover span{
+  background: #fafafa;
+  transition: 500ms;
+}
+#sidebar .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #666;
+  margin: 4px 0;
+  transition: 500ms;
+  
+}
+#sidebar.active {
+  left: 0px;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  display: flex;
+  margin: 4px;
+  justify-content: center;
+  color: white;
+}

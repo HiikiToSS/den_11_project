@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Менюшкаr</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная страница</title>
+    <link rel="icon" href="static/img/web icon.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/navigation.css" id="theme">
   <link rel="stylesheet" href="static/main.css">
-</head> 
+</head>
+
 <body>
   <div class="wrapper">
+    <button class="design_minimalism _anim-items">Минимализм</button>       
+    </div>
+  <script src="js/script.js"></script>
     <header>
-      <div class="container">
-            <div id="sidebar">
-              <div class="toggle-btn" onclick="openMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <ul>
-                <li>Меню сайта</li>
-                <li><a href="templates/index02.html">Главная</a></li>
-                <li><a href="/">Контакты</a></li>
-                <li><a href="templates/index02.html">Про нас</a></li>
-              </ul>
-            </div>
-      </div>
-      
+        <div id="sidebar">
+          <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li>Меню сайта</li>
+            <li><a class = 'design_light' href="templates/lenguage.html">Языки программирования</a  </li>
+            <li><a class = 'design_light' href="templates/contacts.html">Контакты</a></li>
+            <li><a class = 'design_light' href="templates/about.html">Про нас</a></li>
+          </ul>
+        </div>
+
     </header>
-<script src="/js/three.js"></script>
-<script src="/js/Projector.js"></script>
-<script src="/js/CanvasRenderer2.js"></script>
-<script src="/js/stats.min.js"></script>
-<script src="/js/Bird.js"></script>
-<script src="/js/mainbird.js"></script>
-  <script>
-    function openMenu() {
-      document.getElementById("sidebar").classList.toggle('active');
-    }
-  </script>
+    <script src="/js/three.js"></script>
+    <script src="/js/Projector.js"></script>
+    <script src="/js/CanvasRenderer2.js"></script>
+    <script src="/js/stats.min.js"></script>
+    <script src="/js/Bird.js"></script>
+    <script src="/js/mainbird.js"></script>
+    <script>
+      function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
+    </script>
 </body>
+
 </html>

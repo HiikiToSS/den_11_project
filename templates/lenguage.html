@@ -3,41 +3,36 @@
 
 <head>
  <title>Языки Программирования</title>
-<link rel="stylesheet" href="/static/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/navigation.css">
+  <link rel="stylesheet" href="/static/lenguege.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/main.css" id="theme">
 </head>
 <body>
-<div id = body>
+<div>
 <!--  ты пытался скрыть инфу о питоне и кнопку ссылка href чтобы при этом появлялась другая кнопка но снизу текста и дальше хотел сделать типо галочку/стрелочки по которой моно было бы переходить на страницу с полным описанием (60, 64 и 72 строки)  -->
 
-<!-- Панель навигации -->   
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 bg-info">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Языки програмирования</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">На главную</a>
-        </li>
-        <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Разделы</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Языки 1го типа</a></li>
-      <li><a class="dropdown-item" href="#">Языки 1го типа</a></li>
-      <li><a class="dropdown-item" href="#">Языки 1го типа </a></li>
-      <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="dev.html">В общем о ЯПах</a></li>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<!-- навигация -->
+        <div id="sidebar">
+          <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li>Меню сайта</li>
+            <li><a class = 'design_light' href="templates/lenguage.html">Языки программирования</a  </li>
+            <li><a class = 'design_light' href="templates/contacts.html">Контакты</a></li>
+            <li><a class = 'design_light' href="templates/about.html">Про нас</a></li>
+          </ul>
+        </div>
+  
     <!-- Карточки с описанием языков  --> 
-<div class='container'>
+<div class='container mt-4'>
 <div class='row'>
   
 <div class ='col'>
@@ -57,20 +52,15 @@
     <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
     <p class="card-text hide_small_info">Python — это высокоуровневый язык  ориентированный на повышение производительности разработчика и читаемости кода.</p>
 
-      
+
 <p>
-  <a class="btn btn-primary show_more_info_button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Ссылка с href
   </a>
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-    тут будет более полная инфа но не полностью полная инфа о языке (столько тафтологий, русичка бы прибила, хехе)
-
-<a class="btn btn-primary after_hide_small_info_button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Ссылка с href
-  </a>
-    
+тут будет более полная инфа но не полностью полная инфа о языке (столько тафтологий, русичка бы прибила, хехе)
   </div>
 </div>
       
@@ -102,8 +92,17 @@
 </div> 
 
 <div class="footer">
-  <div class="copyright">Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
+  <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div>
+
+    <script src="/js/three.js"></script>
+    <script src="/js/Projector.js"></script>
+    <script src="/js/CanvasRenderer2.js"></script>
+    <script src="/js/stats.min.js"></script>
+    <script src="/js/Bird.js"></script>
+    <script src="/js/mainbird.js"></script>
+    <script>
+      function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>
