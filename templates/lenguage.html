@@ -3,7 +3,7 @@
 
 <head>
  <title>Языки Программирования</title>
-  <link rel="stylesheet" href="/static/navigation.css">
+  <link rel="stylesheet" href="../static/navigation.css">
   <link rel="stylesheet" href="/static/lenguege.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +11,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="static/main.css" id="theme">
+  <link rel="stylesheet" href="../static/form.css" >
 </head>
 <body>
 <div>
-<!--  ты пытался скрыть инфу о питоне и кнопку ссылка href чтобы при этом появлялась другая кнопка но снизу текста и дальше хотел сделать типо галочку/стрелочки по которой моно было бы переходить на страницу с полным описанием (60, 64 и 72 строки)  -->
 
 <!-- навигация -->
+    <header>
         <div id="sidebar">
           <div class="toggle-btn" onclick="openMenu()">
             <span></span>
@@ -25,67 +26,69 @@
           </div>
           <ul>
             <li>Меню сайта</li>
-            <li><a class = 'design_light' href="templates/lenguage.html">Языки программирования</a  </li>
-            <li><a class = 'design_light' href="templates/contacts.html">Контакты</a></li>
-            <li><a class = 'design_light' href="templates/about.html">Про нас</a></li>
+            <li><a href='../html">На главную'</a  </li>
+            <li><a href="templates/contacts.html">Контакты</a></li>
+            <li><a href="templates/about.html">Про нас</a></li>
           </ul>
         </div>
+    </header>
+
   
     <!-- Карточки с описанием языков  --> 
-<div class='container mt-4'>
+<div class='container  mt-4'>
 <div class='row'>
-  
-<div class ='col'>
-  <div class="card mb-3" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">JavaScript</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
-    <p class="card-text">JavaScript ("JS" для краткости) — это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах. ||Сделай краткое описание а при нажатии выводи расширенное с кнопкой для перехода на страницу полностью о языке (https://bootstrap-4.ru/docs/5.0/components/collapse/)</p>
-    </div>
-  </div> 
+
+  <div class ='col'>
+
+<div class = 'design_card'>
+  <div class = 'design_leng'>
+    <b>JavaScript</b>
+  </div>
+  <div>
+  JavaScript ("JS" для краткости) — это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах. ||Сделай краткое описание а при нажатии выводи расширенное с кнопкой для перехода на страницу полностью о языке (https://bootstrap-4.ru/docs/5.0/components/collapse/)
+  </div>
+  <button class = 'design_button'>Показать больше</button>
 </div>
       
 <div class ='col'>
-  <div class="card mb-3" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">Python</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
-    <p class="card-text hide_small_info">Python — это высокоуровневый язык  ориентированный на повышение производительности разработчика и читаемости кода.</p>
 
+<div class = 'design_card'>
+  <div class = 'design_leng'>
+    <b>язык</b>
+  </div>
+  <div>
+  Python
+  </div>
+  <button class = 'design_button'>Показать больше</button>
+</div>
+Python — это высокоуровневый язык  ориентированный на повышение производительности разработчика и читаемости кода.
+</div>
 
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Ссылка с href
-  </a>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-тут будет более полная инфа но не полностью полная инфа о языке (столько тафтологий, русичка бы прибила, хехе)
-  </div>
-</div>
-      
-    </div>
-  </div>
-</div>
+    
     
 <div class ='col'>
-  <div class="card mb-3" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">С++</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
-    <p class="card-text">C++ — компилируемый, статически типизированный язык программирования общего назначения. Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование.</p>
-    </div>
+
+<div class = 'design_card'>
+  <div class = 'design_leng'>
+    <b>C++</b>
   </div>
+  <div>
+  C++ — компилируемый, статически типизированный язык программирования общего назначения. Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование.
+  </div>
+  <button class = 'design_button'>Показать больше</button>
+
 </div>
   
 <div class ='col'>
-  <div class="card mb-3" style="width: 18rem;">
-    <div class="card-body">
-    <h5 class="card-title">PHP (В простонародии пыха)</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Источник ---</h6>
-    <p class="card-text">PHP – это широко используемый язык сценариев общего назначения с открытым исходным кодом. Говоря проще, PHP это язык программирования, специально разработанный для написания web-приложений (сценариев), исполняющихся на Web-сервере. Аббревиатура PHP означает “Hypertext Preprocessor (Препроцессор Гипертекста)".</p>
-    </div>
-  </div> 
+
+<div class = 'design_card'>
+  <div class = 'design_leng'>
+    <b>PHP (в простонародии пыха)</b>
+  </div>
+  <div>
+  PHP – это широко используемый язык сценариев общего назначения с открытым исходным кодом. Говоря проще, PHP это язык программирования, специально разработанный для написания web-приложений (сценариев), исполняющихся на Web-сервере. Аббревиатура PHP означает “Hypertext Preprocessor (Препроцессор Гипертекста)".
+  </div>
+  <button class = 'design_button'>Показать больше</button>
 </div>
   
   </div>
@@ -103,8 +106,9 @@
     <script src="/js/mainbird.js"></script>
     <script>
       function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
+    </script>
   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>

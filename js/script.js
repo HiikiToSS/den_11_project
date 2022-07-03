@@ -27,7 +27,9 @@ if (animItems.length > 0){
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
   }
-  animOnScroll()
+  setTimeout(() => {
+    animOnScroll();
+  }, 500);
 }  
 
 let switchMode = document.getElementById("design_minimalism");

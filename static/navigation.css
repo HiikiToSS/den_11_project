@@ -7,7 +7,7 @@ body{
   background-attachment: fixed;
 }
 
-#sidebar {
+#sidebar{
   font-family: 'Montserrat', sans-serif;
   position: fixed;
   width: 250px;
@@ -17,6 +17,7 @@ body{
   -moz-transition: all 600ms;
   -webkit-transition: all 600ms;
   transition: all 600ms;
+  z-index: 2;
 }
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -35,7 +36,7 @@ body{
 }
 #sidebar ul li a {
   font-family: 'Montserrat', sans-serif;
-  color: #666;
+  color: black;
   text-decoration: none;
   transition: 500ms color;
 }
@@ -47,7 +48,7 @@ body{
   position: absolute;
   left: 270px;
   top: 20px;
-  background: #a6d5df;
+  background: ;
   padding: 10px;
   border-radius: 12px;
   cursor: pointer;
