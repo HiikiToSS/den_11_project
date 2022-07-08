@@ -1,22 +1,27 @@
- *{
+*{
   padding: 0 ;
   margin: 0 ;
   font-family: "Montserrat";
+}
+heatmap(wrapper, data, options={});
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
 }
 
 canvas {
   position: absolute; 
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1000;
 }
 
-.design_minimalism:hover{
+.design_sth:hover{
   color: white;
   transition: 1s color;
 }
 
-.design_minimalism {
+.design_sth{
   color: black;
   font-size: 3em;
   font-family: "Montserrat";
@@ -29,18 +34,236 @@ canvas {
   width: 1em;
   border: blue;
   background: 0; 
-  transition: all 0.8s ease 0s; 
-  transform: translate(0px,400%);
-  opacity: 0;
-} 
-
-.design_minimalism._active {
-  transform:translate(0px,0px);
-  opacity: 1;
+  transition: color 1s;
+  animation-name: drog;
+  animation-duration: 3s;
+  /*как сделать бесконечное повторение дрожи + тех процентов снизу*/
 }
 
+@keyframes drog{
+  0%{top:40%;}
+  1%{top:38%;}
+  2%{top:40%;}
+  3%{top:38%;}
+  4%{top:40%;}
+  5%{top:38%;}
+  6%{top:40%;}
+  7%{top:38%;}
+  8%{top:40%;}
+  9%{top:38%;}
+  10%{top:40%;}
+  11%{top:38%;}
+  12%{top:40%;}
+  13%{top:38%;}
+  14%{top:40%;}
+  15%{top:38%;}
+  16%{top:40%;}
+  17%{top:38%;}
+  18%{top:40%;}
+  19%{top:38%;}
+  20%{top:40%;}
+  21%{top:38%;}
+  22%{top:40%;}
+  23%{top:38%;}
+  24%{top:40%;}
+  25%{top:38%;}
+  26%{top:40%;}
+  27%{top:38%;}
+  28%{top:40%;}
+  29%{top:38%;}
+  30%{top:40%;}
+  31%{top:38%;}
+  32%{top:40%;}
+  33%{top:38%;}
+  34%{top:40%;}
+  35%{top:38%;}
+  36%{top:40%;}
+  37%{top:38%;}
+  38%{top:40%;}
+  39%{top:38%;}
+  40%{top:40%;}
+  41%{top:38%;}
+  42%{top:40%;}
+  43%{top:38%;}
+  44%{top:40%;}
+  45%{top:38%;}
+  46%{top:40%;}
+  47%{top:38%;}
+  48%{top:40%;}
+  49%{top:38%;}
+  50%{top:40%;}
+  51%{top:38%;}
+  52%{top:40%;}
+  53%{top:38%;}
+  54%{top:40%;}
+  55%{top:38%;}
+  56%{top:40%;}
+  57%{top:38%;}
+  58%{top:40%;}
+  59%{top:38%;}
+  60%{top:40%;}
+  61%{top:38%;}
+  62%{top:40%;}
+  63%{top:38%;}
+  64%{top:40%;}
+  65%{top:38%;}
+  66%{top:40%;}
+  67%{top:38%;}
+  68%{top:40%;}
+  69%{top:38%;}
+  70%{top:40%;}
+  71%{top:38%;}
+  72%{top:40%;}
+  73%{top:38%;}
+  74%{top:40%;}
+  75%{top:38%;}
+  76%{top:40%;}
+  77%{top:38%;}
+  78%{top:40%;}
+  79%{top:38%;}
+  80%{top:40%;}
+  81%{top:38%;}
+  82%{top:40%;}
+  83%{top:38%;}
+  84%{top:40%;}
+  85%{top:38%;}
+  86%{top:40%;}
+  87%{top:38%;}
+  88%{top:40%;}
+  89%{top:38%;}
+  90%{top:40%;}
+  91%{top:38%;}
+  92%{top:40%;}
+  93%{top:38%;}
+  94%{top:40%;}
+  95%{top:38%;}
+  96%{top:40%;}
+  97%{top:38%;}
+  98%{top:40%;}
+  99%{top:38%;}
+  100%{top:40%;}
+}
 
-* {
-    margin: 0;
-    padding: 0;
+#design_minimalism:hover{
+  color: white;
+  transition: 1s color;
+}
+
+#design_minimalism {
+  color: black;
+  font-size: 3em;
+  font-family: "Montserrat";
+  white-space: nowrap;
+  display: flex;
+  position: absolute;
+  left: 40%;
+  top:40%;
+  min-height: 1em;
+  width: 1em;
+  border: blue;
+  background: 0; 
+  transition: color 1s;
+  animation-name: slow-show;
+  animation-duration: 2s;
+} 
+
+@keyframes slow-show{
+  0%{
+    left: 40%;
+    top: 70%;
+    opacity: 0;
+  }
+  100%{
+    left: 40%;
+    top:40%;
+    opacity: 1;
+  }
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background: url("img/img08.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
+
+#sidebar{
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: transparent;
+  left: -254px;
+  -moz-transition: all 600ms;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 2;
+}
+#sidebar ul li:first-child {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color:#162635;
+  font-size: 1.95em;
+  list-style: none;
+  padding: 25px 10px 10px 10px;
+}
+#sidebar ul li:not(:first-child) {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px 10px
+}
+#sidebar ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-decoration: none;
+  transition: 500ms color;
+}
+#sidebar ul li a:hover {
+  color: white;
+  transition: 500ms color;
+}
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 270px;
+  top: 20px;
+  background: ;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover span{
+  background: #fafafa;
+  transition: 500ms;
+}
+#sidebar .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: #666;
+  margin: 4px 0;
+  transition: 500ms;
+  
+}
+#sidebar.active {
+  left: 0px;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  display: flex;
+  margin: 4px;
+  justify-content: center;
+  color: white;
 }

@@ -6,7 +6,7 @@
 .design_card{
   border-radius: 4px;
   padding: 15px;
-  width: 300px;
+  width: 18rem;
   border: 1px solid #ebebeb;
   background: white;
   margin: 20px;
@@ -14,7 +14,7 @@
 }
 
 .design_button{
-  width: 125px;
+  width: 13rem;
   height: 50px;
   border: 1px solid #3a88fe;
   border-radius: 4px;
@@ -26,4 +26,8 @@
 .design_leng{
   font-size: 23px;
   margin-bottom: 10px;
+}
+
+.change_cont_w{
+/*пытался изменить ширину контейнера*/
 }

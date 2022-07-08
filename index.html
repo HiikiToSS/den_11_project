@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная страница</title>
-    <link rel="icon" href="static/img/web icon.jpeg">
+    <link rel="icon" href="static/img/web_icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
@@ -15,13 +15,14 @@
 </head>
 
 <body>
-  
-<div class="stars"></div>
-<div class="twinkling"></div>
-  
-  <div class="wrapper">
-    <button class="design_minimalism _anim-items">Минимализм</button>       
+  <div id="wrapper">
+    <button id="design_minimalism">Минимализм</button>       
     </div>
+
+<div id="wrapper">
+    <button class="design_sth">дрожь</button>       
+    </div>
+  
   <script src="js/script.js"></script>
     <header>
         <div id="sidebar">
@@ -39,6 +40,7 @@
         </div>
 
     </header>
+    <script type="text/javascript" src="https://unpkg.com/canvas-heatmap"></script>
     <script src="/js/three.js"></script>
     <script src="/js/Projector.js"></script>
     <script src="/js/CanvasRenderer2.js"></script>
