@@ -1,15 +1,11 @@
-*{
-  padding: 0 ;
-  margin: 0 ;
-  font-family: "Montserrat";
-}
-heatmap(wrapper, data, options={});
+/* зачем это? "heatmap(wrapper, data, options={});"  ничего нигде не меняется ели убрать*/
+
 html, body {
     /* Убирает прокрутку по горизонтале, для мобильной версии */
     overflow-x: hidden;
 }
 
-canvas {
+canvas{
   position: absolute; 
   top: 0;
   left: 0;
@@ -194,7 +190,7 @@ html, body {
     overflow-x: hidden;
 }
 
-#sidebar{
+/*#sidebar{
   font-family: 'Montserrat', sans-serif;
   position: fixed;
   width: 250px;
@@ -204,7 +200,6 @@ html, body {
   -moz-transition: all 600ms;
   -webkit-transition: all 600ms;
   transition: all 600ms;
-  z-index: 2;
 }
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -256,7 +251,7 @@ html, body {
 }
 #sidebar.active {
   left: 0px;
-}
+}*/
 
 .footer{
   position: absolute;

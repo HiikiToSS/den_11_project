@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
 body{
   height: 100vh;
   width: 100vw;
@@ -22,7 +28,7 @@ html, body {
   -moz-transition: all 600ms;
   -webkit-transition: all 600ms;
   transition: all 600ms;
-  z-index: 2;
+  border: 1px solid black ;
 }
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -78,10 +84,11 @@ html, body {
   left: 0px;
 }
 
-.footer{
-  position: absolute;
+.fo0ter{ /*такое название нужно тк дефолтное значение у position в footer - absolute*/
+  border:1px solid green;
+  position: static;
   width: 100%;
-  bottom: 100px;
+  bottom: 0px;
   display: flex;
   margin: 4px;
   justify-content: center;

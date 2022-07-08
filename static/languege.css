@@ -1,12 +1,7 @@
-.lang_cont{
-  width: 40vw;
-  border: 1px solid red
-}
-
 .design_card{
   border-radius: 4px;
   padding: 15px;
-  width: 18rem;
+  width: 270px;
   border: 1px solid #ebebeb;
   background: white;
   margin: 20px;
@@ -14,7 +9,7 @@
 }
 
 .design_button{
-  width: 13rem;
+  width: 150px;
   height: 50px;
   border: 1px solid #3a88fe;
   border-radius: 4px;
@@ -28,6 +23,10 @@
   margin-bottom: 10px;
 }
 
-.change_cont_w{
-/*пытался изменить ширину контейнера*/
+.container{
+  border: 3px solid pink;
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*почему-то зависит от этого значения*/
 }
