@@ -23,10 +23,22 @@
   margin-bottom: 10px;
 }
 
-.container{
-  border: 3px solid pink;
-  border: 1px solid red;
+.cards-container{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /*почему-то зависит от этого значения*/
+  justify-content: end; /*почему-то зависит от этого значения*/
+}
+.total{
+  display: flex;
+}
+
+#sidebar{
+  background: rgba(0, 255, 255, .8);
+  height: 250px;
+  border-radius: 0px 0px 10px 0px;
+}
+
+#sidebar .toggle-btn{
+  background: /*white*/;
 }

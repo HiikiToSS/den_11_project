@@ -7,7 +7,7 @@
 body{
   height: 100vh;
   width: 100vw;
-  background: url("img/img08.jpg");
+  background: url("../static/img/test3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -28,7 +28,6 @@ html, body {
   -moz-transition: all 600ms;
   -webkit-transition: all 600ms;
   transition: all 600ms;
-  border: 1px solid black ;
 }
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -84,13 +83,11 @@ html, body {
   left: 0px;
 }
 
-.fo0ter{ /*такое название нужно тк дефолтное значение у position в footer - absolute*/
-  border:1px solid green;
-  position: static;
+.footer{ /*такое название нужно тк дефолтное значение у position в footer - absolute*/
   width: 100%;
-  bottom: 0px;
   display: flex;
-  margin: 4px;
   justify-content: center;
+  position: absolute;
+  bottom: 5px;
   color: white;
 }
