@@ -1,4 +1,4 @@
-/* зачем это? "heatmap(wrapper, data, options={});"  ничего нигде не меняется ели убрать*/
+/* зачем это? "heatmap(wrapper, data, options={});"  ничего нигде не меняется ели убрать -Хотел сделать эффект теплоты*/
 
 html, body {
     /* Убирает прокрутку по горизонтале, для мобильной версии */
@@ -17,29 +17,6 @@ canvas{
   transition: 1s color;
 }
 
-.design_sth{
-  color: black;
-  font-size: 3em;
-  font-family: "Montserrat";
-  white-space: nowrap;
-  display: flex;
-  position: absolute;
-  left: 40%;
-  top:40%;
-  min-height: 1em;
-  width: 1em;
-  border: blue;
-  background: 0; 
-  transition: color 1s;
-  animation: 0.01s linear 0s infinite alternate drog;
-  /*как сделать бесконечное повторение дрожи + тех процентов снизу*/
-}
-
-@keyframes drog{
-  0%{top:40%;}
-  100%{top:38%;}
-}
-
 #design_minimalism:hover{
   color: white;
   transition: 1s color;
@@ -52,8 +29,8 @@ canvas{
   white-space: nowrap;
   display: flex;
   position: absolute;
-  left: 40%;
-  top:40%;
+  left: 42%;
+  top:30%;
   min-height: 1em;
   width: 1em;
   border: blue;
@@ -65,13 +42,13 @@ canvas{
 
 @keyframes slow-show{
   0%{
-    left: 40%;
+    left: 42%;
     top: 70%;
     opacity: 0;
   }
   100%{
-    left: 40%;
-    top:40%;
+    left: 42%;
+    top:30%;
     opacity: 1;
   }
 }

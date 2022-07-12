@@ -9,3 +9,4 @@ switchMode.onclick = function () {
       theme.href = "static/main.css";
   }
 }
+
