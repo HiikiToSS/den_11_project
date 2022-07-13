@@ -13,8 +13,7 @@ body{
   background-attachment: fixed;
 }
 
-html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии */
+html, body{
     overflow-x: hidden;
 }
 

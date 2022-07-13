@@ -2,7 +2,7 @@
   border-radius: 4px;
   padding: 15px;
   width: 270px;
-  background: rgba(152,191,200, .8);
+  background: rgba(152, 191, 200, .4);
   margin: 20px;
   flex-wrap: wrap;
 }
@@ -13,10 +13,12 @@
   border: 1px solid #3a88fe;
   border-radius: 4px;
   background: #3a88fe;
-  font-size: 18;
+  font-size: 15px;
   margin-top: 15px;
 }
-
+.design_button:hover{
+  background: #8ab9ff;
+}
 .design_leng{
   font-size: 23px;
   margin-bottom: 10px;
@@ -26,18 +28,23 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end; /*почему-то зависит от этого значения*/
+  justify-content: center; /*почему-то зависит от этого значения*/
 }
+
 .total{
   display: flex;
 }
 
 #sidebar{
-  background: rgba(0, 255, 255, .8);
+  background: rgb(81,178,199, .9);
   height: 250px;
   border-radius: 0px 0px 10px 0px;
 }
 
-#sidebar .toggle-btn{
-  background: /*white*/;
+.show_more_info{
+  display: none;
+}
+
+.info{
+  display: none;
 }

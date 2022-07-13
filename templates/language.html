@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="../static/main.css" id="theme">
 </head>
 <body>
-<div>
-  
 <div class='total'> <!-- чё за? -->
 <!-- навигация -->
 
@@ -42,13 +40,11 @@
     <b>JavaScript</b>
   </div>
   <div>
-  JavaScript ("JS" для краткости) — это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах.
+  JavaScript ("JS" для краткости) — это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах. <div class='show_more_info'> </div>
   </div>
   <p><button class = 'design_button'>Показать больше</button></p>
 </div>
 
-
-    
 
 <div class ='design_card'>
 
@@ -57,7 +53,8 @@
   </div>
   <div>
   Python — это высокоуровневый язык  ориентированный на повышение производительности разработчика и читаемости кода.
-    <p><button class = 'design_button'>Показать больше</button></p>  
+    <p>
+      <button class='design_button'>Показать больше</button></p>  
   </div>
 </div>
 
@@ -69,7 +66,8 @@
   <div>
   C++ — подумайте о чём-то заумном вот вам и описание плюсОв.
   </div>
-  <p><button class = 'design_button'>Показать больше</button></p>
+  <div id="c++_text" class='info'>information about C++</div>
+  <p><button class = 'design_button' onclick="clickAction('c++')">Показать больше</button></p>
 </div>
   
 <div class ='design_card'>
@@ -78,9 +76,9 @@
   </div>
   <div>
   PHP – это широко используемый язык с открытым исходным кодом. Говоря проще, PHP это язык программирования, специально разработанный для написания web-приложений.
+    <div id="php_text" class='info'>information about PHP</div>
+    <p><button class = ' design_button' onclick="clickAction('php')">Показать больше</button></p>
   </div>
-  <p><button class = 'design_button'>Показать больше</button></p>
-</div>
 </div>
 </div>
 </div>
@@ -90,15 +88,22 @@
 <div class="footer">
   <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div>
-
-    <!--<script src="/js/three.js"></script>
-    <script src="/js/Projector.js"></script>
-    <script src="/js/CanvasRenderer2.js"></script>
-    <script src="/js/stats.min.js"></script>
-    <script src="/js/Bird.js"></script>
-    <script src="/js/mainbird.js"></script>-->
+  
     <script>
       function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
+    let isTrue = true
+    
+      function clickAction(id){
+        let information = document.getElementById(id+'_text')
+        if (isTrue){
+          information.style['display'] = 'block'
+          isTrue = false
+        } 
+        else{
+          information.style['display'] = 'none'
+          isTrue = true
+        }
+}
     </script>
 
 </body>
