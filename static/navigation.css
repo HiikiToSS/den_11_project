@@ -7,7 +7,7 @@
 body{
   height: 100vh;
   width: 100vw;
-  background: url("../static/img/test3.jpg");
+  background: url("../static/img/wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -82,11 +82,20 @@ html, body{
   left: 0px;
 }
 
-.footer{ /*такое название нужно тк дефолтное значение у position в footer - absolute*/
+.footer{
   width: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 5px;
   color: white;
+}
+
+.go_back{
+  color: rgb(238,238,238);
+  list-style-type: none;
+  text-decoration: none;
+  bottom: 0px;
+  left: 0px;
+  z-index: 3;
 }

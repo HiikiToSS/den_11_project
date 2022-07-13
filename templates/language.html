@@ -7,33 +7,30 @@
   <link rel="stylesheet" href="../static/navigation.css">
   <link rel="stylesheet" href="/static/languege.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../static/main.css" id="theme">
 </head>
 <body>
-<div class='total'> <!-- чё за? -->
-<!-- навигация -->
-
-    <header>
-        <div id="sidebar">
-          <div class="toggle-btn" onclick="openMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul>
-            <li>Меню сайта</li>
-            <li><a href='../index.html'>На главную</a  </li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="about.html">Про нас</a></li>
-          </ul>
-        </div>
-    </header>
+  
+<div class='total'>
+  
+<header>
+    <div id="sidebar">
+      <div class="toggle-btn" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+        <li>Меню сайта</li>
+        <li><a href='../index.html'>На главную</a  </li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="about.html">Про нас</a></li>
+      </ul>
+    </div>
+</header>
 
   
-    <!-- Карточки с описанием языков  --> 
-
 <div class='cards-container'>
 <div class ='design_card'>
   <div class = 'design_leng'>
@@ -47,7 +44,6 @@
 
 
 <div class ='design_card'>
-
   <div class = 'design_leng'>
     <b>Python</b>
   </div>
@@ -69,6 +65,7 @@
   <div id="c++_text" class='info'>information about C++</div>
   <p><button class = 'design_button' onclick="clickAction('c++')">Показать больше</button></p>
 </div>
+
   
 <div class ='design_card'>
   <div class = 'design_leng'>
@@ -79,17 +76,20 @@
     <div id="php_text" class='info'>information about PHP</div>
     <p><button class = ' design_button' onclick="clickAction('php')">Показать больше</button></p>
   </div>
+  
 </div>
 </div>
 </div>
 </div>
 </div>
+
+<a class = 'go_back' href="../index.html">Вернуться на главную</a>
   
 <div class="footer">
   <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div>
   
-    <script>
+<script>
       function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
     let isTrue = true
     
@@ -104,7 +104,7 @@
           isTrue = true
         }
 }
-    </script>
+</script>
 
 </body>
 </html>
