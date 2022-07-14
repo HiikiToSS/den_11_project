@@ -95,7 +95,8 @@ html, body{
   color: rgb(238,238,238);
   list-style-type: none;
   text-decoration: none;
-  bottom: 0px;
-  left: 0px;
-  z-index: 3;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index:3;
 }
