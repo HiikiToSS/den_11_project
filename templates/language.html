@@ -8,12 +8,24 @@
   <link rel="stylesheet" href="/static/languege.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/main.css" id="theme">
+  <link rel="stylesheet" href="../static/main.css">
+  <link rel="stylesheet" href="../static/dark-theme/navigation-dark.css">
 </head>
-<body>
+<body id = body_change>
+
+<button class = hide_log onclick = 'show_log_()'>Log in</button> <!-- сделай js -->
+                     <!-- сделай js -->
+<div class = 'cont_for_log'> <!-- сделай js -->
+  <div>Введи логин <input class = 'design_input' type='text'></div>
+  <div>Введи пароль <input class = 'design_input' type='password'></div>
+  <button class = 'design_create'>Создать аккаунт</button>
+</div>
+  
+<button class = hide_reg onclick = 'show_reg_()'>Sign in</button>
+
+
   
 <div class='total'>
-  
 <header>
     <div id="sidebar">
       <div class="toggle-btn" onclick="openMenu()">
@@ -39,7 +51,8 @@
   <div>
   JavaScript ("JS" для краткости) - это полноценный динамический язык программирования, который применяется к HTML документу, и может обеспечить динамическую интерактивность на веб-сайтах. <div class='show_more_info'> </div>
   </div>
-  <p><button class = 'design_button'>Показать больше</button></p>
+  <div id="js_text" class='info'>information about JavaScript</div>
+    <p><button class = ' design_button' onclick="clickAction('js')">Показать больше</button></p>
 </div>
 
 
@@ -49,9 +62,9 @@
   </div>
   <div>
   Python – универсальный ЯП высокого уровня, его преимущества: высокая производительность и хорошо читаемый код. Синтаксис Питона максимально облегчен, что позволяет выучить его за сравнительно короткое время.
-    <p>
-      <button class='design_button'>Показать больше</button></p>  
   </div>
+  <div id="python_text" class='info'>information about Java</div>
+    <p><button class = ' design_button' onclick="clickAction('python')">Показать больше</button></p>
 </div>
 
     
@@ -97,6 +110,7 @@ Kotlin - язык программирования, созданный в ком
   Java - современный объектно-ориентированный язык программирования. Программа, написанная на Java, способна выполняться практически на любом компьютере.
     <div id="java_text" class='info'>information about Java</div>
     <p><button class = ' design_button' onclick="clickAction('java')">Показать больше</button></p>
+  <a href = ""></a>
   </div>
 </div>
   
@@ -110,17 +124,17 @@ Kotlin - язык программирования, созданный в ком
 <div class="footer">
   <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div>
-
+  
+<button class = small_button onclick = 'turn_night_on()'><img class = 'small_moon' src="../static/img/ночь1.png" alt=""></button>
+  
 <script>
       function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
     let isTrue = true
     
       function clickAction(id){
         let information = document.getElementById(id+'_text')
-        var button = document.getElementsByTagName(id+'button')
         if (isTrue){
           information.style['display'] = 'block'
-          button.innerHTML = 'Свернуть'
           isTrue = false
         } 
         else{
@@ -130,6 +144,7 @@ Kotlin - язык программирования, созданный в ком
 }
   
 </script>
-
+<script src = '../js/wallpaper.js'></script>
+<script src = '../js/reg.js'></script>
 </body>
 </html>

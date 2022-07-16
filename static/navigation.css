@@ -13,6 +13,17 @@ body{
   background-attachment: fixed;
 }
 
+.small_moon{
+  height: 15px;
+  width: 15px;
+
+}
+
+.small_button{
+  background: rgba(0, 0, 0, 0);
+  border: none
+}
+
 html, body{
     overflow-x: hidden;
 }
@@ -62,9 +73,6 @@ html, body{
   border-radius: 12px;
   cursor: pointer;
 }
-#sidebar .toggle-btn:hover {
-  background: ;
-}
 #sidebar .toggle-btn:hover span{
   background: #fafafa;
   transition: 500ms;
@@ -99,4 +107,63 @@ html, body{
   bottom: 5px;
   left: 5px;
   z-index:3;
+}
+
+.small_cab{
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.hide_log{
+  background: rgba(255, 255, 255, .8);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.hide_reg{
+  top: 5px;
+  right: 65px;
+  background: rgba(255, 255, 255, .8);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+  position: absolute;
+}
+
+.hide_reg:active{
+  background: rgba(0, 255, 255, .8);
+}
+
+.hide_log:active{
+  background: rgba(0, 255, 255, .8);
+}
+
+.cont_for_log{
+  width: 157px;
+  overflow: visible;
+  background: rgba(255, 255, 255, .8);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.design_input{
+  border-radius: 3px;
+  border: none;
+}
+
+.design_create{
+  border-radius: 3px;
+  height: 25px;
+  font-size: 12px;
+  border: none;
+  background: white;
+  margin-top: 3px;
 }
