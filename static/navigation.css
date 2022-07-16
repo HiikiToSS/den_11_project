@@ -146,12 +146,25 @@ html, body{
 }
 
 .cont_for_log{
-  width: 157px;
-  overflow: visible;
+  width: 160px;
   background: rgba(255, 255, 255, .8);
   padding: 10px;
   border-radius: 5px;
   margin: 5px;
+  animation-name: show_G;
+  animation-duration: 5s;
+  position: absolute;
+}
+
+@keyframes show_G{
+  0%{
+    opacity: 0;
+    margin-top: 5px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 150px; /* чтобы сохранть значение просто поставь его в основной css - вне анимации тк она насинается сразу после загрузки страницы либо после активации тригера СРАЗУ*/
+  }
 }
 
 .design_input{
