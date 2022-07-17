@@ -1,11 +1,15 @@
 .design_card{
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 15px;
   width: 270px;
   background: rgba(152, 191, 200, .4);
   margin: 20px;
   flex-wrap: wrap;
-  
+  /* почему то при использовани глассморфизма навиганция залезает под языки*/
+}
+
+.design_input{
+  width: 100%;
 }
 
 .design_button{
@@ -20,7 +24,17 @@
   background: #8ab9ff;
 }
 
+a{
+  color: #323232;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .design_leng{
+  width: ;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(152, 191, 200, .4);
   font-size: 23px;
   margin-bottom: 10px;
 }
@@ -39,9 +53,12 @@
 }
 
 #sidebar{
-  background: rgb(29,157,254, .7);
+  background: rgba(152, 191, 200, .4);
   height: 250px;
-  border-radius: 0px 0px 10px 0px;
+  border-radius: 0px 0px 15px 0px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  top: 0px;
 }
 
 .show_more_info{

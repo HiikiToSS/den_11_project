@@ -1,14 +1,4 @@
-var reg_button = document.getElementsByClassName('hide_reg')
-var isShow = true
-
-function show_log_(){
-  var log_button = document.getElementsByClassName('cont_for_log')
-  if (isShow){
-    log_button.style['display'] = 'flex'
-    isShow = false
-  }
-  else{
-    log_button.style['display'] = 'none'
-    isShow = true
-  }
+function show_G(__g){
+  var g_button = document.getElementById('cont_for_'+__g)
+  g_button.classList.toggle('animation_for_'+__g)
 }
