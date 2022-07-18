@@ -2,14 +2,15 @@
   border-radius: 10px;
   padding: 15px;
   width: 270px;
-  background: rgba(152, 191, 200, .4);
+  background: rgb(40,40,40, .6);
   margin: 20px;
   flex-wrap: wrap;
+  color: #A9A9A9
   /* почему то при использовани глассморфизма навиганция залезает под языки*/
 }
 
 .design_card_a{
-  color: #2c1376;
+  color: #3a88fe;
   font-size: 18px;
 }
 
@@ -25,12 +26,9 @@
   font-size: 15px;
   margin-top: 15px;
 }
-.design_button:hover{
-  background: #8ab9ff;
-}
 
 a{
-  color: #323232;
+  color: #A9A9A9;
   list-style-type: none;
   text-decoration: none;
 }
