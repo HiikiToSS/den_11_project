@@ -4,12 +4,10 @@
 <head>
   <title>Языки Программирования</title>
   <link rel="icon" href="static/img/web icon.png">
-  <link rel="stylesheet" href="../static/navigation.css">
-  <link rel="stylesheet" href="/static/language.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/main.css">
-  <link rel="stylesheet" href="../static/dark-theme/navigation-dark.css">
+  <link rel="stylesheet" href="../static/navigation.css" id = 'switch_nav'>
+  <link rel="stylesheet" href="../static/language.css" id = 'switch_lang'>
 </head>
 
 <body id=body_change>
@@ -140,8 +138,7 @@
   <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div> -->
 
-<!--<button class=small_button onclick='turn_night_on()'><img class='small_moon' src="../static/img/ночь1.png"
-      alt=""></button>-->
+<button class=small_button onclick='turn_night_on()'><img class='small_moon' src="../static/img/ночь1.png"alt=""></button>
 
   <script>
     function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
@@ -158,7 +155,6 @@
         isTrue = true
       }
     }
-
   </script>
   <script src='../js/wallpaper.js'></script>
   <script src='../js/reg.js'></script>

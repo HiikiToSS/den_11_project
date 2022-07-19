@@ -1,16 +1,18 @@
-var isLight = true
+let is = true
 
 function turn_night_on(){
-var wallpaper = document.getElementById('body_change')
-if (isLight){
-  wallpaper.classList.add("body_2")
-  wallpaper.classList.remove("body_1")
-  isLight = false
-}
+  let nav_theme = document.getElementById("switch_nav")
+  let lang_theme = document.getElementById("switch_lang");
+  if (is){
+    nav_theme.href = '../static/dark-theme/navigation-dark.css'
+    lang_theme.href = "../static/dark-theme/dark-language.css"
+    is = false
+  }
+  else{
+    nav_theme.href = '../static/navigation.css'
+    lang_theme.href = "../static/language.css"
+    is = true
+  }
 
-else{
-  wallpaper.classList.add("body_1")
-  wallpaper.classList.remove("body_2")
-  isLight = true
-}
+  //$('#styles').attr("href", "s.css")
 }
