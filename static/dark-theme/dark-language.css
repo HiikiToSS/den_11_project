@@ -5,7 +5,7 @@
   background: rgb(40,40,40, .7);
   margin: 20px;
   flex-wrap: wrap;
-  color: #A9A9A9
+  color: #A9A9A9 
   /* почему то при использовани глассморфизма навиганция залезает под языки*/
 }
 

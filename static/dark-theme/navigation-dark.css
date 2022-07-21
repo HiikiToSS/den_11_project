@@ -105,9 +105,10 @@ body{
 }
 
 .hide_reg{
+  color: #A9A9A9;
+  background: rgb(40,40,40, .7);
   top: 5px;
   right: 75px;
-  background: rgba(255, 255, 255, .8);
   border: none;
   border-radius: 5px;
   padding: 3px;
@@ -125,12 +126,13 @@ body{
 #cont_for_reg:after{
   top: -30px;
   border: 15px solid transparent;
-  border-bottom: 15px solid rgba(152, 191, 200, .5);
+  border-bottom: 15px solid rgb(40,40,40, .7);
 }
 
 #cont_for_reg{
   width: 160px;
-  background: rgba(170, 210, 220, .5);
+  color: #A9A9A9;
+  background: rgb(40,40,40, .7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(1px);
   padding: 10px;
@@ -143,7 +145,7 @@ body{
 
 .animation_for_reg{
   animation-name: show_reg;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -159,7 +161,8 @@ body{
 
 
 .hide_log{
-  background: rgba(255, 255, 255, .8);
+  color: #A9A9A9;
+  background: rgb(40,40,40, .7);
   border: none;
   border-radius: 5px;
   padding: 3px;
@@ -178,12 +181,14 @@ body{
 #cont_for_log:after{
   top: -30px;
   border: 15px solid transparent;
-  border-bottom: 15px solid rgba(152, 191, 200, .5);
+  color: #A9A9A9;
+  border-bottom: 15px solid rgb(40,40,40, .7);
 }
 
 #cont_for_log{
   width: 160px;
-  background: rgba(152, 191, 200, .5);
+  color: #A9A9A9;
+  background: rgb(40,40,40, .7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(1px);
   padding: 10px;
@@ -195,7 +200,7 @@ body{
 }
 .animation_for_log{
   animation-name: show_log;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
