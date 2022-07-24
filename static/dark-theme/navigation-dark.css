@@ -17,7 +17,7 @@ body{
   background-attachment: fixed;
 }
 
-.small_moon{
+/*.small_moon{
   height: 15px;
   width: 15px;
 }
@@ -25,7 +25,7 @@ body{
 .small_button{
   background: rgba(0, 0, 0, 0);
   border: none
-}
+}*/
 
 #sidebar{
   font-family: 'Montserrat', sans-serif;
@@ -34,9 +34,8 @@ body{
   height: 100%;
   background: transparent;
   left: -254px;
-  -moz-transition: all 600ms;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
+  transition: left 600ms, height 0ms;
+  transition-delay: 0ms, 600ms;
 }
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
@@ -44,7 +43,7 @@ body{
   color:#162635;
   font-size: 1.95em;
   list-style: none;
-  padding: 25px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
 }
 #sidebar ul li:not(:first-child) {
   width: 90%;
@@ -59,10 +58,6 @@ body{
   text-decoration: none;
   transition: 500ms color;
 }
-#sidebar ul li a:hover {
-  color: white;
-  transition: 500ms color;
-}
 #sidebar button {
   font-size: 1.1em;
   font-family: 'Montserrat', sans-serif;
@@ -70,13 +65,9 @@ body{
   text-decoration: none;
   transition: 500ms color;
 }
-#sidebar button:hover{
-  color: white;
-  transition: 500ms color;
-}
 #sidebar .toggle-btn {
   position: absolute;
-  left: 270px;
+  left: 265px;
   top: 20px;
   padding: 10px;
   border-radius: 12px;
@@ -90,10 +81,11 @@ body{
   background-color: #bababa;
   margin: 4px 0;
   transition: 500ms;
-  
 }
 #sidebar.active {
   left: 0px;
+  height: 35%;
+  transition: left 600ms, height 0ms;
 }
 
 .footer{
@@ -238,8 +230,6 @@ body{
   background: white;
   margin-top: 3px;
 }
-
-
 
 #go_day_night{
   background: none;

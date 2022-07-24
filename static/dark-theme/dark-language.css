@@ -3,9 +3,9 @@
   padding: 15px;
   width: 270px;
   background: rgb(40,40,40, .7);
+  color: #A9A9A9; 
   margin: 20px;
   flex-wrap: wrap;
-  color: #A9A9A9 
   /* почему то при использовани глассморфизма навиганция залезает под языки*/
 }
 
@@ -52,15 +52,6 @@ a{
   margin-top: 20px;
 }
 
-#sidebar{
-  background: rgba(152, 191, 200, .4);
-  height: 250px;
-  border-radius: 0px 0px 15px 0px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(1px);
-  top: 0px;
-}
-
 .show_more_info{
   display: none;
 }
@@ -68,3 +59,17 @@ a{
 .info{
   display: none;
 }
+
+#sidebar{
+  background: rgb(40,40,40, .4);
+  height: 250px;
+  border-radius: 0px 0px 15px 0px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1.5px);
+  top: 0px;
+}
+#sidebar ul li a {color: #A9A9A9;}
+#sidebar ul li:first-child{color: #A9A9A9;}
+#sidebar button{color: #A9A9A9;}
+#theme_line{background: rgba(169, 169, 169, .8);}
+/*#sidebar button:hover{}*/

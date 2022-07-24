@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="../static/navigation.css" id = 'switch_nav'>
-  <link rel="stylesheet" href="../static/langs.css" id = 'switch_langs'>
+  <link rel="stylesheet" href="../../static/navigation.css" id = 'switch_nav'>
+  <link rel="stylesheet" href="../../static/langs.css" id = 'switch_langs'>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-  <title>С++</title>
+  <title>C++</title>
 </head>
 <body>
 <header>
@@ -23,6 +23,8 @@
       <li><a href='../language.html'>Языки программирования</a></li>
       <li><a href="../contacts.html">Контакты</a></li>
       <li><a href="../about.html">Про нас</a></li>
+      <div id = theme_line></div>
+      <li><button id = 'go_day_night' onclick = 'turn_night_on()'>На ночную</button></li>
     </ul>
   </div>
 </header>
@@ -46,7 +48,6 @@ including versions of Lorem Ipsum.</div>
 
 <div class = hello_world><div class = cont_for_hello>Hello world на C++</div><img id = 'c_' src="../../static/img/hi/l_c++.png" alt=""></div>
 </div>
-
 <script src='../../js/langs.js'></script>
 <script src='../../js/navigation.js'></script>
 <script>

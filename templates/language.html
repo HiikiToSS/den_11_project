@@ -39,7 +39,9 @@
           <li>Меню сайта</li>
           <li><a href='../index.html'>На главную</a </li>
           <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="about.html">Про нас</a></li>
+          <li><a href="about.html" id = 'st_kostil'>Про нас</a></li>
+          <div id = theme_line></div>
+      <li><button id = 'go_day_night' onclick = 'turn_night_on()'>На ночную</button></li>
         </ul>
       </div>
     </header>
@@ -126,24 +128,11 @@
   <div>Copyright &copy;2023 <strong>Programist'ы inc</strong>.All Rights Reserved.</div>
 </div> -->
 
-<button class=small_button onclick='turn_night_on()'><img class='small_moon' src="../static/img/ночь1.png"alt=""></button>
+<!-- дань памяти <button class=small_button onclick='turn_night_on()'><img class='small_moon' src="../static/img/ночь1.png"alt=""></button>-->
 
-  <script>
-    function openMenu() {document.getElementById("sidebar").classList.toggle('active');}
-    
-    let isTrue = true
-    function clickAction(id) {
-      var information = document.getElementById(id + '_text')
-      if (isTrue) {
-        information.style['display'] = 'block'
-        isTrue = false
-      }
-      else {
-        information.style['display'] = 'none'
-        isTrue = true
-      }
-    }
-  </script>
+<script>
+    function openMenu(){document.getElementById("sidebar").classList.toggle('active');}
+</script>
 <script src='../js/local_S.js'></script>
 <script src='../js/lang.js'></script>
 <script src='../js/reg.js'></script>
