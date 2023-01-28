@@ -44,3 +44,11 @@
   margin-bottom: 15px;
 }
 
+#sidebar{
+  background: rgb(152, 191, 200, .4);
+  height: 250px;
+  border-radius: 0px 0px 15px 0px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1.5px);
+  top: 0px;
+}

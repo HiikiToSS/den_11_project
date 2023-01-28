@@ -1,15 +1,6 @@
-/* зачем это? "heatmap(wrapper, data, options={});"  ничего нигде не меняется ели убрать -Хотел сделать эффект теплоты*/
-
 html, body {
-    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    /* Убирает прокрутку по горизонтали */
     overflow-x: hidden;
-}
-
-canvas{
-  position: absolute; 
-  top: 0;
-  left: 0;
-  z-index: -1000;
 }
 
 #design_minimalism:hover{
@@ -18,6 +9,8 @@ canvas{
 }
 
 #design_minimalism {
+  list-style-type: none;
+  text-decoration: none;
   color: black;
   font-size: 3em;
   font-family: "Montserrat";
@@ -29,7 +22,6 @@ canvas{
   min-height: 1em;
   width: 1em;
   border: blue;
-  background: 0; 
   transition: color 1s;
   animation-name: slow-show;
   animation-duration: 2s;

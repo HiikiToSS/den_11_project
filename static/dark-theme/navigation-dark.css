@@ -40,7 +40,7 @@ body{
 #sidebar ul li:first-child {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  color:#162635;
+  color: #A9A9A9;
   font-size: 1.95em;
   list-style: none;
   padding: 20px 10px 10px 10px;
@@ -54,16 +54,22 @@ body{
 }
 #sidebar ul li a {
   font-family: 'Montserrat', sans-serif;
-  color: black;
+  color: #A9A9A9;
   text-decoration: none;
   transition: 500ms color;
 }
+#sidebar a:hover{
+ color:  #d4d4d4
+}
 #sidebar button {
+  color: #A9A9A9;
   font-size: 1.1em;
   font-family: 'Montserrat', sans-serif;
-  color: black;
   text-decoration: none;
   transition: 500ms color;
+}
+#sidebar button:hover{
+ color:  #d4d4d4
 }
 #sidebar .toggle-btn {
   position: absolute;
@@ -238,7 +244,7 @@ body{
 
 #theme_line{
   margin-left: 35px;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(169, 169, 169, .8);
   height: 2px;
   width: 30px;
 }
