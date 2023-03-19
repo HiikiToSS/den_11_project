@@ -5,5 +5,5 @@ if (localStorage.getItem('theme') == "true"){
 }
 
 else{
-  lang_theme.href = '../static/language.css'
+  lang_theme.href = '../static/css/language.css'
 }

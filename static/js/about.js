@@ -5,5 +5,5 @@ if (localStorage.getItem('theme') == "true"){
 }
 
 else{
-  about_theme.href = '../static/about.css'
+  about_theme.href = '../static/css/about.css'
 }

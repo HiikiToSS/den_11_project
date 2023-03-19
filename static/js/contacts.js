@@ -5,5 +5,5 @@ if (localStorage.getItem('theme') == "true"){
 }
 
 else{
-  contacts_theme.href = '../static/contacts.css'
+  contacts_theme.href = '../static/css/contacts.css'
 }
