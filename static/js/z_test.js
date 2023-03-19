@@ -4,5 +4,5 @@ function a(){
   for (let i = 0; i < langs.length; i++){
   let (langs[i] + '_img') = document.getElementById(i)
   console.log(langs[i] + '_img')
-} 
+}
 }

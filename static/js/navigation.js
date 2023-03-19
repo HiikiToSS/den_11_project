@@ -7,6 +7,6 @@ if (localStorage.getItem('theme') == "true"){
 }
 
 else{
-  nav_theme.href = '../../static/navigation.css'
+  nav_theme.href = '../../static/css/navigation.css'
   if (day_night_text){day_night_text.innerHTML = 'На ночную'}
 }
