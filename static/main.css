@@ -9,33 +9,31 @@ html, body {
 }
 
 #design_minimalism {
-  list-style-type: none;
-  text-decoration: none;
-  color: black;
-  font-size: 3em;
-  font-family: "Montserrat";
-  white-space: nowrap;
-  display: flex;
-  position: absolute;
-  left: 41%;
-  top: 42%;
-  min-height: 1em;
-  width: 1em;
-  border: blue;
-  transition: color 1s;
-  animation-name: slow-show;
-  animation-duration: 2s;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 4em;
+    white-space: nowrap;
+    display: flex;
+    position: absolute;
+    left: 41%;
+    top: 45%;
+    min-height: 1em;
+    width: 7em;
+    transition: color 1s;
+    animation-name: slow-show;
+    animation-duration: 2s;
 } 
 
 @keyframes slow-show{
   0%{
     left: 41%;
-    top: 70%;
+    top: 75%;
     opacity: 0;
   }
   100%{
     left: 41%;
-    top:42%;
+    top: 45%;
     opacity: 1;
   }
 }
